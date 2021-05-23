@@ -1,0 +1,22 @@
+1. Swagger
+2. lombok - @slf4j annotation
+3. logback
+profiles/ @properties configuration
+security
+caching
+around advice
+task execution and scheduling
+quartz scheduler
+spring integration
+spring batch
+actuators
+spring cloud
+API Gateway
+ZUUL
+APIGee???
+JAva Generics
+Service discovery
+Load balancer
+
+
+https://www.baeldung.com/spring-boot

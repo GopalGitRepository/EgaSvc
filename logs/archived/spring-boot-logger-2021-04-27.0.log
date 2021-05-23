@@ -1,0 +1,58 @@
+2021-04-27 23:14:23,877 INFO org.springframework.boot.StartupInfoLogger [main] Starting EgaSvcApplication using Java 1.8.0_201 on Master with PID 19568 (C:\Users\patil\OneDrive\Desktop\Development\EGA_Svc\target\classes started by patil in C:\Users\patil\OneDrive\Desktop\Development\EGA_Svc)
+2021-04-27 23:14:23,885 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.4.5, Spring v5.3.6
+2021-04-27 23:14:23,885 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-04-27 23:14:29,783 INFO org.springframework.boot.StartupInfoLogger [main] Started EgaSvcApplication in 7.969 seconds (JVM running for 9.438)
+2021-04-27 23:17:33,587 TRACE com.ega.controller.AppInfoController [http-nio-8080-exec-10] A TRACE Message
+2021-04-27 23:17:33,588 DEBUG com.ega.controller.AppInfoController [http-nio-8080-exec-10] A DEBUG Message
+2021-04-27 23:17:33,589 INFO com.ega.controller.AppInfoController [http-nio-8080-exec-10] An INFO Message
+2021-04-27 23:17:33,589 WARN com.ega.controller.AppInfoController [http-nio-8080-exec-10] A WARN Message
+2021-04-27 23:17:33,589 ERROR com.ega.controller.AppInfoController [http-nio-8080-exec-10] An ERROR Message
+2021-04-27 23:17:33,594 WARN com.ega.controller.AppInfoController [http-nio-8080-exec-10] Entering method appInfo()...
+2021-04-27 23:17:33,596 INFO com.ega.controller.AppInfoController [http-nio-8080-exec-10] ...exiting method appInfo()
+2021-04-27 23:18:39,734 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2021-04-27 23:18:39,781 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2021-04-27 23:18:39,782 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-04-27 23:18:39,784 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-04-27 23:18:39,996 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-04-27 23:18:39,996 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3042 ms
+2021-04-27 23:18:40,963 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [main] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-27 23:18:41,144 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-27 23:18:41,430 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2021-04-27 23:18:41,602 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-27 23:18:41,602 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Context refreshed
+2021-04-27 23:18:41,678 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Found 1 custom documentation plugin(s)
+2021-04-27 23:18:41,758 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [main] Scanning for api listing references
+2021-04-27 23:19:50,185 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-27 23:20:19,206 ERROR com.ega.controller.AppInfoController [http-nio-8080-exec-9] An ERROR Message
+2021-04-27 23:21:12,783 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2021-04-27 23:21:12,815 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2021-04-27 23:21:12,815 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-04-27 23:21:12,815 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-04-27 23:21:12,986 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-04-27 23:21:12,986 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2988 ms
+2021-04-27 23:21:13,968 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [main] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-27 23:21:14,143 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-27 23:21:14,429 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2021-04-27 23:21:14,662 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-27 23:21:14,662 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Context refreshed
+2021-04-27 23:21:14,735 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Found 1 custom documentation plugin(s)
+2021-04-27 23:21:14,787 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [main] Scanning for api listing references
+2021-04-27 23:21:25,438 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-27 23:21:25,453 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-04-27 23:21:25,456 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2021-04-27 23:21:30,664 ERROR com.ega.controller.AppInfoController [http-nio-8080-exec-9] An ERROR Message
+2021-04-27 23:23:24,841 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-27 23:23:33,535 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2021-04-27 23:23:33,567 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2021-04-27 23:23:33,570 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2021-04-27 23:23:33,570 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-04-27 23:23:33,756 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-04-27 23:23:33,756 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3090 ms
+2021-04-27 23:23:34,742 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [main] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-04-27 23:23:34,908 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-27 23:23:35,188 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2021-04-27 23:23:35,378 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-27 23:23:35,378 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Context refreshed
+2021-04-27 23:23:35,468 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Found 1 custom documentation plugin(s)
+2021-04-27 23:23:35,534 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [main] Scanning for api listing references
+2021-04-27 23:37:35,145 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
