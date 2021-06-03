@@ -1,0 +1,46 @@
+Spring Eureca - Discovery server
+1. Create new project with eureka-server dependency
+2. add anottation on application class @EnableEurekaServer
+resource properties
+server.port=8761<-default
+eureka.client.register-with-eureka=false <- do not self register
+eureka.client.fetch-registry=false
+2.1 you might even have to add jaxb dependencies if you are refering it as java 11 onward it is removed by default
+
+3. server is ready
+
+Start preparing client service
+4. add spring cloud version in sever to listen to client
+5. Add eurekca client dependency
+property
+<spring-cloud.version>2020.0.3</spring-cloud.version>
+<dependency>
+	<groupId>org.springframework.cloud</groupId>
+	<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+</dependency
+
+<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>${spring-cloud.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+	<repositories>
+		<repository>
+			<id>spring-milestones</id>
+			<name>Spring Milestones</name>
+			<url>https://repo.spring.io/milestone</url>
+		</repository>
+	</repositories>
+
+6. add properties
+eureka.instance.preferIpAddress=true
+spring.application.name=Entitlement Management
+7. by declaring @Bean restTemplate @LoadBalanced, you can directly use application name to access apis inside code instead of usig host and port name
+8. client will do load balancing auto if there are more than one instance of services running on different ports
+9. even if eureka server goes down, your client would have cached application name and it's mapping to hot:port internally and your client invoking other micor service through application name would work seamlessly
