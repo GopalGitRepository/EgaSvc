@@ -1,8 +1,9 @@
 1. Swagger
 2. lombok - @slf4j annotation
 3. logback
-profiles/ @properties configuration
-security
+4. profiles/ @properties configuration
+5. security
+6. Java Generics
 caching
 around advice
 task execution and scheduling
@@ -11,10 +12,11 @@ spring integration
 spring batch
 actuators
 spring cloud
+Docker, kubernet
 API Gateway
 ZUUL
 APIGee???
-JAva Generics
+
 Service discovery
 Load balancer
 
