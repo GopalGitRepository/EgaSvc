@@ -4,21 +4,23 @@
 4. profiles/ @properties configuration
 5. security
 6. Java Generics
+7. Eureka server(Service discovery), EureKa client,Load balancer
+8. Circuit breaker, Hystrix, hystrix dashboard, --actuators
+9. Docker, --Kubernate
+
 caching
 around advice
 task execution and scheduling
 quartz scheduler
 spring integration
 spring batch
-actuators
+
 spring cloud
-Docker, kubernet
 API Gateway
 ZUUL
 APIGee???
 
-Service discovery
-Load balancer
+
 
 
 https://www.baeldung.com/spring-boot
