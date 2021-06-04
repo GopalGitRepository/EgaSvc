@@ -1,0 +1,48 @@
+Docker commands
+docker images
+docker container ls
+--create ysql images, refer to https://hub.docker.com/_/mysql
+docker pull mysql
+
+--run mysql docker instance which will connect to local db
+docker run --name c-ega-mysql -e MYSQL_ROOT_PASSWORD=Installer@284 -e MYSQL_DATABASE=ega -e MYSQL_USER=admin -e MYSQL_PASSWORD=Credential@126 -d mysql:5.7
+docker run --network "external-api" --name c-ega-mysql -e MYSQL_ROOT_PASSWORD=Installer@284 -e MYSQL_DATABASE=ega -e MYSQL_USER=admin -e MYSQL_PASSWORD=Credential@126 -d mysql:5.7
+docker run --network "external-api" --name c-ega-mysql --add-host=local:172.17.0.2   -e MYSQL_ROOT_PASSWORD=Installer@284 -e MYSQL_DATABASE=ega -e MYSQL_USER=admin -e MYSQL_PASSWORD=Credential@126 -d mysql:5.7
+
+--run another container to execute sql
+--did not worked->docker run -it --network some-network --rm mysql mysql -hsome-mysql -uexample-user -p
+--no clue what it id but successful
+docker exec ega-mysql bash -c "mysql -h127.0.0.1 -P 3306 --protocol=tcp -uadmin -pCredential@126 -e \"CREATE USER 'mysqldockeruser'@'localhost' IDENTIFIED BY 'dockermysqlpass';\"; exit;"
+--to get a Docker container's IP address from the host
+docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' ega-mysql
+--worked-
+--docker run -d -p 3306:3306 mysql:8.0
+--docker run -d -p 3306:3306 mysql:8.0 -h172.17.0.2
+--to invoke mysql command line against docker image
+docker run -it --rm mysql mysql -h172.17.0.2 -uroot -p
+mysql -P 8083 --protocol=tcp -u root -p
+
+--To create docker image
+1. modify mysql host with docker mysql image name
+2. create Dockerfile in your project
+2. create jar file using mavern build 
+3. execute cmd form application src where Dockerfile is located,
+ to create docker images-> 
+docker build . -t <jar-name-small-case>  -> docker build . -t egasvc-mysql
+-> it would create docker image of your application
+4. verify image created -> docker images
+5. run docker container
+--docker run -it --name egasvc docker-ega-mysql:latest
+docker run -p 8086:8086 --name c-egasvc-mysql -d egasvc-mysql --link  c-ega-mysql:mysql
+
+5. create network and run both containers on same network
+docker network create external-api
+docker run --network "external-api" --name "c-egasvc-mysql" -p 8086:8086 -d egasvc-mysql
+https://stackoverflow.com/questions/54692666/docker-java-net-connectexception-connection-refused-application-running-at/54693085
+
+
+6. push container
+docker container commit 5e5abab14073 egasvc-mysql:1.0
+
+############TODO######
+connect local ms server
